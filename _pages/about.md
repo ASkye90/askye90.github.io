@@ -2,28 +2,28 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: askye_pic.jpg
+  image_circular: true # crops the image to make it circular
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 3 # leave blank to include all the news in the `_news` folder
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello and welcome to my website, I'm Andrew! I have 10+ years experience working in Quality Assurance and Improvement.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm passionate about quality and love how it interplays with almost every other team on a project. You're always learning and applying that knowledge to help improve the QA process.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I started my professional quality journey by helping Lenox Hill Hospital's [Bariatric Center](https://www.nycbariatrics.com/) attain and maintain it's [MBSAQIP accreditation](https://www.facs.org/quality-programs/accreditation-and-verification/metabolic-and-bariatric-surgery-accreditation-and-quality-improvement-program/) as a certified Surgical Clinical Reviewer. I went on to help deliver games to market as a QA Engineer: [Cubeworks](https://store.steampowered.com/app/636220/CubeWorks/), [Outriders](https://store.steampowered.com/app/680420/OUTRIDERS/), the highly anticipated [Gears of War:E-day](https://store.steampowered.com/app/3010850/Gears_of_War_EDay/) and a handful of other projects.
+
+I'm also deeply interested in automation. I've used [Unreal Automation Tool](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-automation-tool-for-unreal-engine) for a variety of tests and am personally expanding my knowledge (link to projects page) in the many different modern tools and technology.
+
+Outside of my core work, I am an avid gamer. I'll always try to make time for a "quick game of Mage Knight" or you can catch me sinking my teeth into the latest raid in FFXIV.
