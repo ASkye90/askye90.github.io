@@ -14,12 +14,12 @@ related_publications: false
 
 This project is my personal Selenium playground. It goes through various practice automation sites, runs tests and generates comprehensive test reports.
 
-The entire end to end flow is automated, running on a regularly scheduled basis, allowing users to simply review test results.
+The entire end to end flow is automated, running on a regularly scheduled basis, allowing end users to simply review test results.
 
 
 ### Supported with
 
-[![Eclipse][Eclipse.js]][Eclipse-url] [![Java][Java.js]][Java-url] [![Selenium][Selenium.js]][Selenium-url] [![GitHub][GitHub.js]][GitHub-url] [![Jenkins][Jenkins.js]][Jenkins-url] [![Python][Python.js]][Python-url]
+[![Eclipse][Eclipse.js]][Eclipse-url] [![Java][Java.js]][Java-url] [![Selenium][Selenium.js]][Selenium-url] [![GitHub][GitHub.js]][GitHub-url] [![Jenkins][Jenkins.js]][Jenkins-url]
 
 
 <!-- TABLE OF CONTENTS -->
@@ -28,16 +28,16 @@ The entire end to end flow is automated, running on a regularly scheduled basis,
   <li>
     <a href="#features">Features</a>
     <ul>
-      <li><a href="#cross-browser-compatability">Cross-Browser Compatability</a></li>
-      <li><a href="#extent-test">Extent Reports</a></li>      
-      <li><a href="#extent-test">JSON Test Paramatization</a></li>
-      <li><a href="#extent-test">Takes Screenshot</a></li>      
-      <li><a href="#extent-test">Page Object Model</a></li>      
-      <li><a href="#extent-test">Javadoc API</a></li>      
-      <li><a href="#extent-test">Retries</a></li>      
-      <li><a href="#extent-test">Parallel Test</a></li>      
-      <li><a href="#extent-test">Automated Test Execution</a></li>   
-      <li><a href="#extent-test">Custom Test Execution</a></li>    
+      <li><a href="#-cross-browser-compatability">Cross-Browser Compatability</a></li>
+      <li><a href="#-extent-reports">Extent Reports</a></li>      
+      <li><a href="#-json-test-paramatization">JSON Test Paramatization</a></li>
+      <li><a href="#-takes-screenshot">Takes Screenshot</a></li>      
+      <li><a href="#-page-object-model">Page Object Model</a></li>      
+      <li><a href="#-javadoc-api">Javadoc API</a></li>      
+      <li><a href="#-retries">Retries</a></li>      
+      <li><a href="#-parallel-test">Parallel Test</a></li>      
+      <li><a href="#-automated-test-execution">Automated Test Execution</a></li>   
+      <li><a href="#-custom-test-execution">Custom Test Execution</a></li>    
     </ul>
   </li>
   <li><a href="#samples">Samples</a></li>
@@ -66,6 +66,7 @@ Using Selenium WebDriver allows the tests to be run on any supported browser. Cu
 ```
 
 ---
+<a id="extent-reports"></a>
 #### 📊 Extent Reports
 Generates comprehensive Extent Reports on every run with detailed logging.
 ![Example Report](./images/ExtentReportExample.png)
@@ -95,6 +96,7 @@ AddProductsToCart.json
 ]
 ```
 ![JSON Example](./images/JSONExample.png)
+
 ---
 #### 📸 Takes Screenshot
 Using TestNG Listeners, any time a test fails we take a screenshot of the failure state and attach it to the test report.
@@ -117,29 +119,53 @@ Uses Page Factory with POM design pattern for clean, re-usable and easy to under
 ---
 #### 📚 Javadoc API
 Fully documented with Javadocs.
-[a link](./doc/index.html)
+
+[Check out the API](./doc/index.html)!
 
 ---
 #### 🔁 Retries
-Supports re-running failing tests multiple times when they are flaky
+Using TestNG IRetryAnalyzer we run any designated flaky test up to 3 times on failure, greatly improving our test accuracy.
 
 ---
 #### 👩‍👩‍👦‍👦 Parallel Test
-Runs multiple tests in parallel to speed up execution time
+Setup to run tests on each website in parallel with simple controls to adjust capacity through test configuration XMLs.
 
 ---
 #### ⏱️ Automated Test Execution
-Ran on a regular basis through Jenkins, generating new reports daily.
+Test are run on a daily basis at midnight Eastern time through a local Jenkins server.
+
+[See the latest report](./latestReport.html)!
+
+<sub> Would have loved to have made this an online server, but web services can get expensive and locally hosting to the web is a network security risk I'm not suited to handle. </sub>
 
 ---
 #### 🚀 Custom Test Execution
-Can execute on test profiles to run fully customizable tests. Current profiles written can run each website separately or every single test across all websites.
-https://maven.apache.org/surefire/maven-surefire-plugin/
+Using maven's surefire plugin, we can execute on test profiles to run fully customization tests. Current profiles can run each website separately or the full suite of test across all websites.
+
+```
+  pom.xml (abbrev.)
+  <profile>
+    <id>HumanBenchmark</id>
+      <build>
+      ...
+        <suiteXmlFile>Test Suites/hbench.xml</suiteXmlFile>
+      ...
+    </build>
+  </profile>
+
+
+  hbench.xml
+  <test thread-count="5" name="Human Benchmark Test">
+    <classes>
+      <class name="andrewSkye.tests.HumanBenchmarkTests" />
+    </classes>
+  </test>
+```
 
 <!-- SAMPLES -->
 ## Samples
 
-TBD
+
 
 <!-- CONTACT -->
 ## Contact
@@ -179,6 +205,3 @@ Project Link: [https://github.com/ASkye90/SeleniumPractice](https://github.com/A
 
 [Jenkins.js]: https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white
 [Jenkins-url]: https://www.jenkins.io/
-
-[Python.js]: https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff
-[Python-url]: https://www.python.org/
