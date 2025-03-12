@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-resume",
           title: "resume",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Need to format my own to add here. Feel free to contact me via email if you want it before then.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -34,7 +34,27 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-selenium",
+          section: "News",},{id: "projects-board-game-recommender",
+          title: 'Board Game Recommender',
+          description: "board game recommendation script",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/BoardGameRecommender/";
+            },},{id: "projects-cubeworks",
+          title: 'Cubeworks',
+          description: "VR puzzle game",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Cubeworks/";
+            },},{id: "projects-gears-of-war-e-day",
+          title: 'Gears of War E-Day',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Gears_of_War_EDay/";
+            },},{id: "projects-outriders",
+          title: 'Outriders',
+          description: "Looter-shooter RPG",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Outriders/";
+            },},{id: "projects-selenium",
           title: 'Selenium',
           description: "an end to end automated web test",
           section: "Projects",handler: () => {
