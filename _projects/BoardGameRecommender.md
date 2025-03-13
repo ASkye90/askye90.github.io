@@ -19,26 +19,19 @@ Using a combination of web scraping and API requests to gather data from boardga
 
 ### Supported with
 
- PyCharm, Python, GitHub, PostgreSQL, Playwright, BGG XML API2
+  [![Pycharm][Pycharm.js]][Pycharm-url] [![Python][Python.js]][Python-url] [![GitHub][GitHub.js]][GitHub-url] [![Postgresql][Postgresql.js]][Postgresql-url] [![Playwright][Playwright.js]][Playwright-url] [![BoardGameGeek][BoardGameGeek.js]][BoardGameGeek-url]
 
+<!-- EXAMPLE -->
+## Example
+Running the script on BGG User: ASkye (https://boardgamegeek.com/collection/user/ASkye)
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-<ol>
-  <li>
-    <a href="#features">Features</a>
-    <ul>
-      <li><a href="#-tbd">TBD</a></li>
-    </ul>
-  </li>
-  <li><a href="#examples">Contact</a></li>
-  <li><a href="#acknowledgments">Acknowledgments</a></li>
-</ol>
+Results formatted as:
 
-<!-- FEATURES -->
-## Features
+board game id : name - recommendation weight - [ids for board games in collection used while calculating weight]
 
-#### TBD
+![pycharm64_Za0jWknBh6](https://github.com/user-attachments/assets/effa54d2-08d9-4009-ac60-d1ab31a0b781)
+
+Using a very simple formula for weights, based on user's ratings and BGG average ratings (producing weights from 1-100).
 
 <!-- CONTACT -->
 ## Contact
@@ -47,33 +40,23 @@ Andrew Skye - andrew.d.skye@gmail.com
 
 Project Link: [https://github.com/ASkye90/Board-Game-Recommendation](https://github.com/ASkye90/Board-Game-Recommendation)
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* [Best-README-Template](https://github.com/othneildrew/Best-README-Template) used as starting framework for this README
-* [Basic Selenium Project README](https://github.com/christian-draeger/basic-selenium-project/tree/master) inspired formatting for this README
-
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
 
-[Java.js]: https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white
-[Java-url]: https://www.java.com/en/
+[Pycharm.js]: https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white
+[Pycharm-url]: https://www.jetbrains.com/pycharm/
 
-[Selenium.js]: https://img.shields.io/badge/Selenium-43B02A?logo=selenium&logoColor=fff
-[Selenium-url]: https://www.selenium.dev/
+[Python.js]:  https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue
+[Python-url]: https://www.python.org/
 
-[GitHub.js]: https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white
+[GitHub.js]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
 [GitHub-url]: https://github.com/
 
-[Eclipse.js]: https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white
-[Eclipse-url]:  https://eclipseide.org/
+[Postgresql.js]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+[Postgresql-url]: https://www.postgresql.org/
 
-[Jenkins.js]: https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white
-[Jenkins-url]: https://www.jenkins.io/
+[Playwright.js]: https://img.shields.io/badge/-playwright-%232EAD33?style=for-the-badge&logo=playwright&logoColor=white"
+[Playwright-url]: https://playwright.dev/
+
+[BoardGameGeek.js]: https://img.shields.io/badge/BoardGameGeek-FF5100?style=for-the-badge&logo=BoardGameGeek&logoColor=FFFFFF
+[BoardGameGeek-url]: https://boardgamegeek.com/
