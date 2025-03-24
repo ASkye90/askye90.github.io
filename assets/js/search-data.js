@@ -49,6 +49,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Gears_of_War_EDay/";
+            },},{id: "projects-marketboard-analysis-xiv",
+          title: 'Marketboard Analysis XIV',
+          description: "Using ML to predict the market in FFXIV",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Marketboard_Analysis_XIV/";
             },},{id: "projects-outriders",
           title: 'Outriders',
           description: "Looter-shooter RPG",
