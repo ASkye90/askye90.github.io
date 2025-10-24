@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 23, 2025 12:02:00 AM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 24, 2025 12:02:00 AM</span></a>
 </li>
 </ul>
 </div>
@@ -88,6 +88,7 @@
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="warning" href="#"><span>Warning</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -101,7 +102,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">HumanBenchmark</a><a class="dropdown-item" href="#">Herokuapp</a><a class="dropdown-item" href="#">TutorialsNinja</a>
+<a class="dropdown-item" href="#">TutorialsNinja</a><a class="dropdown-item" href="#">HumanBenchmark</a><a class="dropdown-item" href="#">Herokuapp</a>
 </ul>
 </li>
 <li class="dropdown">
@@ -120,7 +121,7 @@
           <div class="test-detail">
             <p class="name">AB Page</p>
             <p class="text-sm">
-              <span>12:02:02 AM</span> / <span>00:00:00:161</span>
+              <span>12:02:03 AM</span> / <span>00:00:00:182</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -129,9 +130,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AB Page</h5>
-<span class='badge badge-success'>10.23.2025 12:02:02 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:03 AM</span>
-<span class='badge badge-default'>00:00:00:161</span>
+<span class='badge badge-success'>10.24.2025 12:02:03 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:03 AM</span>
+<span class='badge badge-default'>00:00:00:182</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -148,7 +149,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:02 AM</td>
+        <td>12:02:03 AM</td>
         <td>
           Clicking into AB Page
         </td>
@@ -179,25 +180,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="warning" test-id="2"
           author="AndrewSkye"
           tag="Herokuapp"
           device="chrome">
           <div class="test-detail">
             <p class="name">Dynamic Content Page</p>
             <p class="text-sm">
-              <span>12:02:03 AM</span> / <span>00:00:02:079</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:02:03 AM</span> / <span>00:00:03:212</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Dynamic Content Page</h5>
-<span class='badge badge-success'>10.23.2025 12:02:03 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:05 AM</span>
-<span class='badge badge-default'>00:00:02:079</span>
+<h5 class="test-status text-warning">Dynamic Content Page</h5>
+<span class='badge badge-success'>10.24.2025 12:02:03 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:06 AM</span>
+<span class='badge badge-default'>00:00:03:212</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -228,21 +229,113 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 AM</td>
+        <td>12:02:06 AM</td>
         <td>
-          Refreshed page 28 times
+          Refreshed page 50 times
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 AM</td>
+        <td>12:02:06 AM</td>
         <td>
           Checking if duplicates exist
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>12:02:06 AM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Unable to find page with 3 repeated Avatars within 50 refreshes.  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at andrewSkye.tests.HerokuappTests.testDynamicPage(HerokuappTests.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:06 AM</td>
+        <td>
+          Retrying test due to flaky test failure.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="AndrewSkye"
+          tag="TutorialsNinja"
+          device="chrome">
+          <div class="test-detail">
+            <p class="name">Login</p>
+            <p class="text-sm">
+              <span>12:02:05 AM</span> / <span>00:00:02:531</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login</h5>
+<span class='badge badge-success'>10.24.2025 12:02:05 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:07 AM</span>
+<span class='badge badge-default'>00:00:02:531</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AndrewSkye</span>
+<span class="badge badge-pill badge-default">TutorialsNinja</span>
+<span class="badge badge-pill badge-default">chrome</span></div>
+<div class="m-t-10 m-l-5">Logs into the website</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
         <td>12:02:05 AM</td>
+        <td>
+          Logging in
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:07 AM</td>
+        <td>
+          Login complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:02:07 AM</td>
         <td>
           Test Passed
         </td>
@@ -252,14 +345,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="3"
+        <li class="test-item"  status="fail" test-id="4"
           author="AndrewSkye"
           tag="HumanBenchmark"
           device="chrome">
           <div class="test-detail">
             <p class="name">Reaction Game</p>
             <p class="text-sm">
-              <span>12:02:05 AM</span> / <span>00:00:01:615</span>
+              <span>12:02:06 AM</span> / <span>00:00:01:731</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -268,10 +361,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Reaction Game</h5>
-<span class='badge badge-success'>10.23.2025 12:02:05 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:06 AM</span>
-<span class='badge badge-default'>00:00:01:615</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-success'>10.24.2025 12:02:06 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:08 AM</span>
+<span class='badge badge-default'>00:00:01:731</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -287,31 +380,31 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 AM</td>
+        <td>12:02:06 AM</td>
         <td>
           Clicking into Reaction Time
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 AM</td>
+        <td>12:02:07 AM</td>
         <td>
           Starting round 1
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:02:06 AM</td>
+        <td>12:02:08 AM</td>
         <td>
           <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".css\-42wpoy"}
-  (Session info: chrome=141.0.7390.122)
+  (Session info: chrome=141.0.7390.123)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3bdcad0f435e604660f8a336e1b12047, findElement {using=class name, value=css-42wpoy}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\jenkins\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62318/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3bdcad0f435e604660f8a336e1b12047
+Command: [c2d1ba710db4886c62f6d78c9ec5a0fb, findElement {value=css-42wpoy, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\jenkins\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52825}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52825/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c2d1ba710db4886c62f6d78c9ec5a0fb
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -360,84 +453,25 @@ Session ID: 3bdcad0f435e604660f8a336e1b12047
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author="AndrewSkye"
-          tag="TutorialsNinja"
-          device="chrome">
-          <div class="test-detail">
-            <p class="name">Login</p>
-            <p class="text-sm">
-              <span>12:02:05 AM</span> / <span>00:00:02:486</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login</h5>
-<span class='badge badge-success'>10.23.2025 12:02:05 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:07 AM</span>
-<span class='badge badge-default'>00:00:02:486</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">AndrewSkye</span>
-<span class="badge badge-pill badge-default">TutorialsNinja</span>
-<span class="badge badge-pill badge-default">chrome</span></div>
-<div class="m-t-10 m-l-5">Logs into the website</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 AM</td>
-        <td>
-          Logging in
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 AM</td>
-        <td>
-          Login complete
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:07 AM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="5"
+        <li class="test-item"  status="warning" test-id="5"
           author="AndrewSkye"
           tag="Herokuapp"
           device="chrome">
           <div class="test-detail">
-            <p class="name">Hovers Page</p>
+            <p class="name">Dynamic Content Page</p>
             <p class="text-sm">
-              <span>12:02:05 AM</span> / <span>00:00:00:678</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:02:06 AM</span> / <span>00:00:03:373</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Hovers Page</h5>
-<span class='badge badge-success'>10.23.2025 12:02:05 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:06 AM</span>
-<span class='badge badge-default'>00:00:00:678</span>
+<h5 class="test-status text-warning">Dynamic Content Page</h5>
+<span class='badge badge-success'>10.24.2025 12:02:06 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:10 AM</span>
+<span class='badge badge-default'>00:00:03:373</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -446,7 +480,7 @@ Session ID: 3bdcad0f435e604660f8a336e1b12047
 <div class="m-t-15"><span class="badge badge-pill badge-default">AndrewSkye</span>
 <span class="badge badge-pill badge-default">Herokuapp</span>
 <span class="badge badge-pill badge-default">chrome</span></div>
-<div class="m-t-10 m-l-5">Clicks into a random user profile and checks if it loads the correct profile.</div>
+<div class="m-t-10 m-l-5">Checks if user can find a page with 3 duplicated avatars within 50 refreshes.</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -454,129 +488,47 @@ Session ID: 3bdcad0f435e604660f8a336e1b12047
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 AM</td>
-        <td>
-          Clicking into Hovers Page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 AM</td>
-        <td>
-          Collecting user information
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 AM</td>
-        <td>
-          Clicking into a random user profile page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
         <td>12:02:06 AM</td>
         <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="6"
-          author="AndrewSkye"
-          tag="HumanBenchmark"
-          device="chrome">
-          <div class="test-detail">
-            <p class="name">Typing Game</p>
-            <p class="text-sm">
-              <span>12:02:07 AM</span> / <span>00:00:07:716</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">Typing Game</h5>
-<span class='badge badge-success'>10.23.2025 12:02:07 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:14 AM</span>
-<span class='badge badge-default'>00:00:07:716</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">AndrewSkye</span>
-<span class="badge badge-pill badge-default">HumanBenchmark</span>
-<span class="badge badge-pill badge-default">chrome</span></div>
-<div class="m-t-10 m-l-5">Runs one typing round and checks the reported wpm is above 0.</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:07 AM</td>
-        <td>
-          Clicking into Typing Game
+          Clicking into Dynamic Content Page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
         <td>12:02:07 AM</td>
         <td>
-          Collecting paragraph into String
+          Refreshing page up to 50 times
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:11 AM</td>
+        <td>12:02:10 AM</td>
         <td>
-          Typing full paragraph
+          Refreshed page 50 times
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:02:14 AM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:10 AM</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".css-1qvtbrk h1"}
-  (Session info: chrome=141.0.7390.122)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3bdcad0f435e604660f8a336e1b12047, findElement {using=css selector, value=.css-1qvtbrk h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\jenkins\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62318/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3bdcad0f435e604660f8a336e1b12047
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
-	at andrewSkye.humanBenchmark.TypingPage.typeTest(TypingPage.java:68)
-	at andrewSkye.tests.HumanBenchmarkTests.testTypingGame(HumanBenchmarkTests.java:91)
+          Checking if duplicates exist
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>12:02:10 AM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Unable to find page with 3 repeated Avatars within 50 refreshes.  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at andrewSkye.tests.HerokuappTests.testDynamicPage(HerokuappTests.java:90)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
@@ -595,19 +547,26 @@ Session ID: 3bdcad0f435e604660f8a336e1b12047
           
         </td>
       </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:10 AM</td>
+        <td>
+          Retrying test due to flaky test failure.
+        </td>
+      </tr>
   </tbody>
 </table>
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="7"
+        <li class="test-item"  status="fail" test-id="6"
           author="AndrewSkye"
           tag="TutorialsNinja"
           device="chrome">
           <div class="test-detail">
             <p class="name">Add Product to Cart: Apple Cinema 30"</p>
             <p class="text-sm">
-              <span>12:02:07 AM</span> / <span>00:00:08:326</span>
+              <span>12:02:07 AM</span> / <span>00:00:08:909</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -616,10 +575,10 @@ Session ID: 3bdcad0f435e604660f8a336e1b12047
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Add Product to Cart: Apple Cinema 30"</h5>
-<span class='badge badge-success'>10.23.2025 12:02:07 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:16 AM</span>
-<span class='badge badge-default'>00:00:08:326</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-success'>10.24.2025 12:02:07 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:16 AM</span>
+<span class='badge badge-default'>00:00:08:909</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -670,7 +629,7 @@ Session ID: 3bdcad0f435e604660f8a336e1b12047
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:13 AM</td>
+        <td>12:02:14 AM</td>
         <td>
           Adding to Cart
         </td>
@@ -680,14 +639,14 @@ Session ID: 3bdcad0f435e604660f8a336e1b12047
         <td>12:02:16 AM</td>
         <td>
           <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".alert\-success"}
-  (Session info: chrome=141.0.7390.122)
+  (Session info: chrome=141.0.7390.123)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b1728c1206d912aadd201e00f9c7c943, findElement {using=class name, value=alert-success}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\jenkins\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62321/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b1728c1206d912aadd201e00f9c7c943
+Command: [daf2dca8a5e9e7f5bd03d7b23d504ec9, findElement {value=alert-success, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\jenkins\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52826/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: daf2dca8a5e9e7f5bd03d7b23d504ec9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -737,14 +696,268 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 </div>
           </div>
         </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author="AndrewSkye"
+          tag="HumanBenchmark"
+          device="chrome">
+          <div class="test-detail">
+            <p class="name">Typing Game</p>
+            <p class="text-sm">
+              <span>12:02:08 AM</span> / <span>00:00:06:422</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Typing Game</h5>
+<span class='badge badge-success'>10.24.2025 12:02:08 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:15 AM</span>
+<span class='badge badge-default'>00:00:06:422</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AndrewSkye</span>
+<span class="badge badge-pill badge-default">HumanBenchmark</span>
+<span class="badge badge-pill badge-default">chrome</span></div>
+<div class="m-t-10 m-l-5">Runs one typing round and checks the reported wpm is above 0.</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:08 AM</td>
+        <td>
+          Clicking into Typing Game
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:09 AM</td>
+        <td>
+          Collecting paragraph into String
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:12 AM</td>
+        <td>
+          Typing full paragraph
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:02:15 AM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".css-1qvtbrk h1"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2d1ba710db4886c62f6d78c9ec5a0fb, findElement {value=.css-1qvtbrk h1, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\jenkins\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52825}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52825/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c2d1ba710db4886c62f6d78c9ec5a0fb
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+	at andrewSkye.humanBenchmark.TypingPage.typeTest(TypingPage.java:68)
+	at andrewSkye.tests.HumanBenchmarkTests.testTypingGame(HumanBenchmarkTests.java:91)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
         <li class="test-item"  status="pass" test-id="8"
+          author="AndrewSkye"
+          tag="Herokuapp"
+          device="chrome">
+          <div class="test-detail">
+            <p class="name">Dynamic Content Page</p>
+            <p class="text-sm">
+              <span>12:02:10 AM</span> / <span>00:00:01:233</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Dynamic Content Page</h5>
+<span class='badge badge-success'>10.24.2025 12:02:10 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:11 AM</span>
+<span class='badge badge-default'>00:00:01:233</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AndrewSkye</span>
+<span class="badge badge-pill badge-default">Herokuapp</span>
+<span class="badge badge-pill badge-default">chrome</span></div>
+<div class="m-t-10 m-l-5">Checks if user can find a page with 3 duplicated avatars within 50 refreshes.</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:10 AM</td>
+        <td>
+          Clicking into Dynamic Content Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:10 AM</td>
+        <td>
+          Refreshing page up to 50 times
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:11 AM</td>
+        <td>
+          Refreshed page 18 times
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:11 AM</td>
+        <td>
+          Checking if duplicates exist
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:02:11 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author="AndrewSkye"
+          tag="Herokuapp"
+          device="chrome">
+          <div class="test-detail">
+            <p class="name">Hovers Page</p>
+            <p class="text-sm">
+              <span>12:02:11 AM</span> / <span>00:00:00:715</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Hovers Page</h5>
+<span class='badge badge-success'>10.24.2025 12:02:11 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:12 AM</span>
+<span class='badge badge-default'>00:00:00:715</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AndrewSkye</span>
+<span class="badge badge-pill badge-default">Herokuapp</span>
+<span class="badge badge-pill badge-default">chrome</span></div>
+<div class="m-t-10 m-l-5">Clicks into a random user profile and checks if it loads the correct profile.</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:11 AM</td>
+        <td>
+          Clicking into Hovers Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:12 AM</td>
+        <td>
+          Collecting user information
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:12 AM</td>
+        <td>
+          Clicking into a random user profile page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:02:12 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
           author="AndrewSkye"
           tag="TutorialsNinja"
           device="chrome">
           <div class="test-detail">
             <p class="name">Add Product to Cart: iPhone</p>
             <p class="text-sm">
-              <span>12:02:16 AM</span> / <span>00:00:02:116</span>
+              <span>12:02:16 AM</span> / <span>00:00:02:219</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -753,10 +966,10 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Add Product to Cart: iPhone</h5>
-<span class='badge badge-success'>10.23.2025 12:02:16 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:18 AM</span>
-<span class='badge badge-default'>00:00:02:116</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-success'>10.24.2025 12:02:16 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:19 AM</span>
+<span class='badge badge-default'>00:00:02:219</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -772,14 +985,14 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:16 AM</td>
+        <td>12:02:17 AM</td>
         <td>
           Collecting category names
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:16 AM</td>
+        <td>12:02:17 AM</td>
         <td>
           Searching for iPhone in each category.
         </td>
@@ -793,28 +1006,28 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:17 AM</td>
+        <td>12:02:18 AM</td>
         <td>
           Opened iPhone product page.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:17 AM</td>
+        <td>12:02:18 AM</td>
         <td>
           Entering available options
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:17 AM</td>
+        <td>12:02:18 AM</td>
         <td>
           Adding to Cart
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:18 AM</td>
+        <td>12:02:19 AM</td>
         <td>
           Success: You have added iPhone to your shopping cart!
 ×
@@ -822,7 +1035,7 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:18 AM</td>
+        <td>12:02:19 AM</td>
         <td>
           Test Passed
         </td>
@@ -832,14 +1045,14 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="9"
+        <li class="test-item"  status="pass" test-id="11"
           author="AndrewSkye"
           tag="TutorialsNinja"
           device="chrome">
           <div class="test-detail">
             <p class="name">Add Product to Cart: iPod Shuffle</p>
             <p class="text-sm">
-              <span>12:02:18 AM</span> / <span>00:00:09:211</span>
+              <span>12:02:19 AM</span> / <span>00:00:09:056</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -848,10 +1061,10 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Add Product to Cart: iPod Shuffle</h5>
-<span class='badge badge-success'>10.23.2025 12:02:18 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:27 AM</span>
-<span class='badge badge-default'>00:00:09:211</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-success'>10.24.2025 12:02:19 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:28 AM</span>
+<span class='badge badge-default'>00:00:09:056</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -867,35 +1080,35 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:18 AM</td>
+        <td>12:02:19 AM</td>
         <td>
           Collecting category names
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:18 AM</td>
+        <td>12:02:19 AM</td>
         <td>
           Searching for iPod Shuffle in each category.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:26 AM</td>
+        <td>12:02:27 AM</td>
         <td>
           Found iPod Shuffle in MP3 Players
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:26 AM</td>
+        <td>12:02:27 AM</td>
         <td>
           Opened iPod Shuffle product page.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:26 AM</td>
+        <td>12:02:27 AM</td>
         <td>
           Entering available options
         </td>
@@ -909,7 +1122,7 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:27 AM</td>
+        <td>12:02:28 AM</td>
         <td>
           Success: You have added iPod Shuffle to your shopping cart!
 ×
@@ -917,7 +1130,7 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:27 AM</td>
+        <td>12:02:28 AM</td>
         <td>
           Test Passed
         </td>
@@ -927,14 +1140,14 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="10"
+        <li class="test-item"  status="fail" test-id="12"
           author="AndrewSkye"
           tag="TutorialsNinja"
           device="chrome">
           <div class="test-detail">
             <p class="name">Checkout Product: iPod Touch</p>
             <p class="text-sm">
-              <span>12:02:27 AM</span> / <span>00:00:08:229</span>
+              <span>12:02:28 AM</span> / <span>00:00:08:104</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -943,10 +1156,10 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Checkout Product: iPod Touch</h5>
-<span class='badge badge-success'>10.23.2025 12:02:27 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:35 AM</span>
-<span class='badge badge-default'>00:00:08:229</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-success'>10.24.2025 12:02:28 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:36 AM</span>
+<span class='badge badge-default'>00:00:08:104</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -962,42 +1175,42 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:27 AM</td>
+        <td>12:02:28 AM</td>
         <td>
           Collecting category names
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:27 AM</td>
+        <td>12:02:28 AM</td>
         <td>
           Searching for iPod Touch in each category.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:33 AM</td>
+        <td>12:02:34 AM</td>
         <td>
           Found iPod Touch in MP3 Players
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:34 AM</td>
+        <td>12:02:35 AM</td>
         <td>
           Opened iPod Touch product page.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:34 AM</td>
+        <td>12:02:35 AM</td>
         <td>
           Entering available options
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:34 AM</td>
+        <td>12:02:35 AM</td>
         <td>
           Adding to Cart
         </td>
@@ -1012,14 +1225,14 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:35 AM</td>
+        <td>12:02:36 AM</td>
         <td>
           Opened Shopping Cart page.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>12:02:35 AM</td>
+        <td>12:02:36 AM</td>
         <td>
           Products marked with *** are not available in the desired quantity or not in stock!
 ×
@@ -1027,7 +1240,7 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:02:35 AM</td>
+        <td>12:02:36 AM</td>
         <td>
           <textarea readonly class="code-block">java.lang.AssertionError: iPod Touch cannot be purchased due to warning.
 	at org.testng.Assert.fail(Assert.java:111)
@@ -1062,14 +1275,14 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="11"
+        <li class="test-item"  status="pass" test-id="13"
           author="AndrewSkye"
           tag="TutorialsNinja"
           device="chrome">
           <div class="test-detail">
             <p class="name">Checkout Product: HP LP3065</p>
             <p class="text-sm">
-              <span>12:02:35 AM</span> / <span>00:00:12:136</span>
+              <span>12:02:36 AM</span> / <span>00:00:11:847</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1078,10 +1291,10 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Checkout Product: HP LP3065</h5>
-<span class='badge badge-success'>10.23.2025 12:02:35 AM</span>
-<span class='badge badge-danger'>10.23.2025 12:02:47 AM</span>
-<span class='badge badge-default'>00:00:12:136</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-success'>10.24.2025 12:02:36 AM</span>
+<span class='badge badge-danger'>10.24.2025 12:02:48 AM</span>
+<span class='badge badge-default'>00:00:11:847</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -1111,7 +1324,7 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:36 AM</td>
+        <td>12:02:37 AM</td>
         <td>
           Found HP LP3065 in Desktops
         </td>
@@ -1132,14 +1345,14 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:37 AM</td>
+        <td>12:02:38 AM</td>
         <td>
           Adding to Cart
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:37 AM</td>
+        <td>12:02:38 AM</td>
         <td>
           Success: You have added HP LP3065 to your shopping cart!
 ×
@@ -1154,7 +1367,7 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:39 AM</td>
+        <td>12:02:40 AM</td>
         <td>
           Warning present for other item(s): Products marked with *** are not available in the desired quantity or not in stock!
 ×
@@ -1176,7 +1389,7 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:41 AM</td>
+        <td>12:02:42 AM</td>
         <td>
           Removed all iPhone from cart due to warning
         </td>
@@ -1218,14 +1431,14 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:47 AM</td>
+        <td>12:02:48 AM</td>
         <td>
           Confirmed order
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:47 AM</td>
+        <td>12:02:48 AM</td>
         <td>
           Test Passed
         </td>
@@ -1256,14 +1469,16 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <div class="test-detail">
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
+<span class='badge log badge-warning'>2</span>
 </span>
 <p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>java.lang.AssertionError</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-warning'>2 others</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1274,11 +1489,25 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 </tr>
 </thead>
 <tbody>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>00:02:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Dynamic Content Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>00:02:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Dynamic Content Page</a>
+</td>
+</tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:27 AM</td>
+<td>00:02:28 AM</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'>Checkout Product: iPod Touch</a>
+<a href="#" class="linked" test-id='12' id='12'>Checkout Product: iPod Touch</a>
 </td>
 </tr>
 </tbody>
@@ -1309,23 +1538,23 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:05 AM</td>
+<td>00:02:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>Reaction Game</a>
+<a href="#" class="linked" test-id='4' id='4'>Reaction Game</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:02:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Typing Game</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
 <td>00:02:07 AM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>Typing Game</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:07 AM</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>Add Product to Cart: Apple Cinema 30"</a>
+<a href="#" class="linked" test-id='6' id='6'>Add Product to Cart: Apple Cinema 30"</a>
 </td>
 </tr>
 </tbody>
@@ -1348,93 +1577,6 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>2</span>
-</span>
-<p class="name">HumanBenchmark</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>HumanBenchmark</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:05 AM</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>Reaction Game</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:07 AM</td>
-<td>
-<a href="#" class="linked" test-id='6' id='6'>Typing Game</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>3</span>
-</span>
-<p class="name">Herokuapp</p>
-<p class="duration text-sm">3 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>Herokuapp</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:02 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>AB Page</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:03 AM</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>Dynamic Content Page</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:05 AM</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>Hovers Page</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -1463,42 +1605,145 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <td><span class="badge log pass-bg">Pass</span></td>
 <td>00:02:05 AM</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>Login</a>
+<a href="#" class="linked" test-id='3' id='3'>Login</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
 <td>00:02:07 AM</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>Add Product to Cart: Apple Cinema 30"</a>
+<a href="#" class="linked" test-id='6' id='6'>Add Product to Cart: Apple Cinema 30"</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
 <td>00:02:16 AM</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>Add Product to Cart: iPhone</a>
+<a href="#" class="linked" test-id='10' id='10'>Add Product to Cart: iPhone</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:18 AM</td>
+<td>00:02:19 AM</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>Add Product to Cart: iPod Shuffle</a>
+<a href="#" class="linked" test-id='11' id='11'>Add Product to Cart: iPod Shuffle</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:27 AM</td>
+<td>00:02:28 AM</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'>Checkout Product: iPod Touch</a>
+<a href="#" class="linked" test-id='12' id='12'>Checkout Product: iPod Touch</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:35 AM</td>
+<td>00:02:36 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='11'>Checkout Product: HP LP3065</a>
+<a href="#" class="linked" test-id='13' id='13'>Checkout Product: HP LP3065</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">HumanBenchmark</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>HumanBenchmark</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:02:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Reaction Game</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:02:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Typing Game</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-warning'>2</span>
+</span>
+<p class="name">Herokuapp</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Herokuapp</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="skip" class='badge log badge-warning'>2 others</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>AB Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>00:02:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Dynamic Content Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>00:02:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Dynamic Content Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Dynamic Content Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Hovers Page</a>
 </td>
 </tr>
 </tbody>
@@ -1526,15 +1771,17 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <span class="meta">
 <span class='badge log pass-bg'>7</span>
 <span class='badge log badge-danger'>4</span>
+<span class='badge log badge-warning'>2</span>
 </span>
 <p class="name">chrome</p>
-<p class="duration text-sm">11 tests</p>
+<p class="duration text-sm">13 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>chrome</h4>
 <span status="pass" class='badge log pass-bg'>7 passed</span>
 <span status="fail" class='badge log badge-danger'>4 failed</span>
+<span status="skip" class='badge log badge-warning'>2 others</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1547,79 +1794,93 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:02 AM</td>
+<td>00:02:03 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>AB Page</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
 <td>00:02:03 AM</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>Dynamic Content Page</a>
 </td>
 </tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Login</a>
+</td>
+</tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:05 AM</td>
+<td>00:02:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>Reaction Game</a>
+<a href="#" class="linked" test-id='4' id='4'>Reaction Game</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:05 AM</td>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>00:02:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>Login</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:05 AM</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>Hovers Page</a>
+<a href="#" class="linked" test-id='5' id='5'>Dynamic Content Page</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
 <td>00:02:07 AM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>Typing Game</a>
+<a href="#" class="linked" test-id='6' id='6'>Add Product to Cart: Apple Cinema 30"</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:07 AM</td>
+<td>00:02:08 AM</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>Add Product to Cart: Apple Cinema 30"</a>
+<a href="#" class="linked" test-id='7' id='7'>Typing Game</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Dynamic Content Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Hovers Page</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
 <td>00:02:16 AM</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>Add Product to Cart: iPhone</a>
+<a href="#" class="linked" test-id='10' id='10'>Add Product to Cart: iPhone</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:18 AM</td>
+<td>00:02:19 AM</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>Add Product to Cart: iPod Shuffle</a>
+<a href="#" class="linked" test-id='11' id='11'>Add Product to Cart: iPod Shuffle</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:27 AM</td>
+<td>00:02:28 AM</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'>Checkout Product: iPod Touch</a>
+<a href="#" class="linked" test-id='12' id='12'>Checkout Product: iPod Touch</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:35 AM</td>
+<td>00:02:36 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='11'>Checkout Product: HP LP3065</a>
+<a href="#" class="linked" test-id='13' id='13'>Checkout Product: HP LP3065</a>
 </td>
 </tr>
 </tbody>
@@ -1647,15 +1908,17 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <span class="meta">
 <span class='badge log pass-bg'>7</span>
 <span class='badge log badge-danger'>4</span>
+<span class='badge log badge-warning'>2</span>
 </span>
 <p class="name">AndrewSkye</p>
-<p class="duration text-sm">11 tests</p>
+<p class="duration text-sm">13 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>AndrewSkye</h4>
 <span status="pass" class='badge log pass-bg'>7 passed</span>
 <span status="fail" class='badge log badge-danger'>4 failed</span>
+<span status="skip" class='badge log badge-warning'>2 others</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1668,79 +1931,93 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:02 AM</td>
+<td>00:02:03 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>AB Page</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
 <td>00:02:03 AM</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>Dynamic Content Page</a>
 </td>
 </tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Login</a>
+</td>
+</tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:05 AM</td>
+<td>00:02:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>Reaction Game</a>
+<a href="#" class="linked" test-id='4' id='4'>Reaction Game</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:05 AM</td>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>00:02:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>Login</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:05 AM</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>Hovers Page</a>
+<a href="#" class="linked" test-id='5' id='5'>Dynamic Content Page</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
 <td>00:02:07 AM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>Typing Game</a>
+<a href="#" class="linked" test-id='6' id='6'>Add Product to Cart: Apple Cinema 30"</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:07 AM</td>
+<td>00:02:08 AM</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>Add Product to Cart: Apple Cinema 30"</a>
+<a href="#" class="linked" test-id='7' id='7'>Typing Game</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Dynamic Content Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Hovers Page</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
 <td>00:02:16 AM</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>Add Product to Cart: iPhone</a>
+<a href="#" class="linked" test-id='10' id='10'>Add Product to Cart: iPhone</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:18 AM</td>
+<td>00:02:19 AM</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>Add Product to Cart: iPod Shuffle</a>
+<a href="#" class="linked" test-id='11' id='11'>Add Product to Cart: iPod Shuffle</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:02:27 AM</td>
+<td>00:02:28 AM</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'>Checkout Product: iPod Touch</a>
+<a href="#" class="linked" test-id='12' id='12'>Checkout Product: iPod Touch</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:02:35 AM</td>
+<td>00:02:36 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='11'>Checkout Product: HP LP3065</a>
+<a href="#" class="linked" test-id='13' id='13'>Checkout Product: HP LP3065</a>
 </td>
 </tr>
 </tbody>
@@ -1760,13 +2037,13 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 23, 2025 12:02:00 AM</h3>
+<h3>Oct 24, 2025 12:02:00 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 23, 2025 12:02:52 AM</h3>
+<h3>Oct 24, 2025 12:02:53 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1794,13 +2071,13 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='63%'>
+<div><small data-tooltip='53%'>
 <b>7</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='36%'><b>4</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='30%'><b>4</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='15%'>2</b> others
 </small>
 </div>
 </div>
@@ -1817,10 +2094,10 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='21%'><b>16</b> events passed</small></div>
+<div><small data-tooltip='18%'><b>16</b> events passed</small></div>
 <div>
-<small data-tooltip='5%'><b>4</b> events failed,
-<b data-tooltip='%'>55</b> others
+<small data-tooltip='4%'><b>4</b> events failed,
+<b data-tooltip='%'>67</b> others
 </small>
 </div>
 </div>
@@ -1836,7 +2113,7 @@ Session ID: b1728c1206d912aadd201e00f9c7c943
 </div></div>
 <script>
 var timeline = {
-"AB Page":0.161,"Dynamic Content Page":2.079,"Reaction Game":1.615,"Login":2.486,"Hovers Page":0.678,"Typing Game":7.716,"Add Product to Cart: Apple Cinema 30"":8.326,"Add Product to Cart: iPhone":2.116,"Add Product to Cart: iPod Shuffle":9.211,"Checkout Product: iPod Touch":8.229,"Checkout Product: HP LP3065":12.136
+"AB Page":0.182,"Dynamic Content Page":3.212,"Login":2.531,"Reaction Game":1.731,"Dynamic Content Page":3.373,"Add Product to Cart: Apple Cinema 30"":8.909,"Typing Game":6.422,"Dynamic Content Page":1.233,"Hovers Page":0.715,"Add Product to Cart: iPhone":2.219,"Add Product to Cart: iPod Shuffle":9.056,"Checkout Product: iPod Touch":8.104,"Checkout Product: HP LP3065":11.847
 };
 </script>
 <div class="row">
@@ -1851,8 +2128,8 @@ var timeline = {
 <td>7</td>
 <td>4</td>
 <td>0</td>
-<td>0</td>
-<td>63.636%</td>
+<td>2</td>
+<td>53.846%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1863,6 +2140,14 @@ var timeline = {
 <div class="card-header"><p>Tags</p></div>
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>TutorialsNinja</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>66.667%</td>
+</tr>
 <tr>
 <td>HumanBenchmark</td>
 <td>0</td>
@@ -1876,16 +2161,8 @@ var timeline = {
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>TutorialsNinja</td>
-<td>4</td>
 <td>2</td>
-<td>0</td>
-<td>0</td>
-<td>66.667%</td>
+<td>60%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1902,8 +2179,8 @@ var timeline = {
 <td>7</td>
 <td>4</td>
 <td>0</td>
-<td>0</td>
-<td>63.636%</td>
+<td>2</td>
+<td>53.846%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1930,7 +2207,7 @@ var statusGroup = {
 parentCount: 5,
 passParent: 7,
 failParent: 4,
-warningParent: 0,
+warningParent: 2,
 skipParent: 0,
 childCount: 5,
 passChild: 0,
@@ -1947,9 +2224,9 @@ infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 16,
 failEvents: 4,
-warningEvents: 1,
+warningEvents: 3,
 skipEvents: 0,
-infoEvents: 54
+infoEvents: 64
 };
 </script>        </div>
       </div>
